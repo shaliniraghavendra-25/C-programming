@@ -142,6 +142,103 @@ printf("the total number of digits");
 return 0;
 }
 
+Question 8:
+Write a program to find Factorial of a number
+#include<stdio.h>
+int main()
+{
+int n,fact=1;
+printf("enter the number:");
+scanf("%d",&n);
+if(n<0){
+printf("invalid");
+}
+else
+{
+for(int i=1;i<=n;i++)
+{
+fact=fact*i;
+}
+printf("factorial is %d",fact);
+return 0;
+}
+}
+
+Question 9:
+Write a program to find Fibonacci series up to n
+#include<stdio.h>
+int main(){
+int a=1,b=0,next,n;
+printf("enter the number:");
+scanf("%d",&n);
+printf("Fibonacci series/n");
+for(int i=1;i<n;i++){
+next=a+b;
+printf("%d",next);
+a=b;
+b=next;
+}
+printf("Fibonacci series is %d");
+return 0;
+}
+
+Question 10:
+Write a program to find Sum of digits of a number
+#include<stdio.h>
+int main(){
+int n,sum;
+printf("enter the number:");
+scanf("%d",&n);
+while(n!=0){
+sum=sum+n%10;
+n=n/10;
+}
+printf("sum is %d",sum);
+return 0;
+}
+
+Question 11:
+Write a program to find Sum of N natural numbers
+#include<stdio.h>
+
+int main() {
+    int n, sum = 0, i = 1;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    while(i <= n) {
+        sum += i;
+        i++;
+    }
+
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
+
+Question 12:
+Write a program to reverse a given number
+#include<stdio.h>
+int main() {
+int r, s= 0,n;
+printf("Enter n: ");
+scanf("%d", &n);
+do
+{
+r=n%10;
+s=s*10+r;
+n=n/10;
+}
+while(n!=0);
+{
+printf("reverse no= %d\n", s);
+return 0;
+}
+
+
+
+
 
 
 
