@@ -1,0 +1,383 @@
+Q1.Sum of two numbers using function
+#include<stdio.h>
+void sum()
+{
+int a,b,sum=0;
+printf("enter the two numbers\n");
+scanf("%d %d",&a,&b);
+sum=a+b;
+printf("sum is %d\n",sum);
+}
+int main()
+{
+sum();
+}
+
+No Arguments, No Return Value
+#include<stdio.h>
+void sum()
+{
+int a=4,b=3,result;
+result=a+b;
+printf("sum is %d",result);
+}
+int main()
+{
+sum();
+return 0;
+}
+
+No Arguments, Return Value
+#include<stdio.h>
+int sum()
+{
+int a=10,b=10,result;
+return a+b;
+}
+int main()
+{
+int result=sum();
+printf("sum is %d",result);
+return 0;
+}
+
+Arguments, No Return Value
+#include<stdio.h>
+int sum(int a,int b)
+{
+int result=a+b;
+printf("sum is %d",result);
+}
+int main()
+{
+sum(10,20);
+return 0;
+}
+
+Arguments + Return Value
+#include<stdio.h>
+int sum(int a,int b)
+{
+return a+b;
+int main()
+{
+int result=sum(20,10);
+printf("sum is %d",result);
+return 0;
+}
+
+Q2.Even or Odd using function
+No Arguments,No Return Value
+#include<stdio.h>
+int checkevenodd()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+if(num%2==0)
+{
+printf("%d is even",num);
+}
+else
+printf("%d is odd",num);
+}
+int main()
+{
+checkevenodd();
+}
+
+No Arguments, Return Value
+#include<stdio.h>
+int checkevenodd()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+if(num%2==0)
+return 1;
+else
+return 0;
+}
+int main()
+{
+int result=checkevenodd();
+if(result==1)
+printf("%d is even");
+else
+printf("%d is odd");
+return 0;
+}
+
+Arguments, No Return Value
+#include<stdio.h>
+void checkevenodd(int num)
+{
+if(num%2==0)
+printf("%d is even",num);
+else
+printf("%d is odd",num);
+}
+int main()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+checkevenodd(num);
+return 0;
+}
+
+Arguments, Return Value
+#include<stdio.h>
+int checkEvenOdd(int num) {
+    if(num % 2 == 0)
+        return 1;
+    else
+        return 0;
+}
+
+int main() {
+    int n;
+
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    if(checkEvenOdd(n))
+        printf("Even\n");
+    else
+        printf("Odd\n");
+
+    return 0;
+}
+
+Q3.Find maximum of two numbers
+No Arguments, No Return Value
+#include<stdio.h>
+void max()
+{
+int a,b;
+printf("enter the a and b value:");
+scanf("%d %d",&a,&b);
+if(a>b)
+{
+printf("%d is maximum value",a);
+}
+else
+printf("%d is maximum value",b);
+int main()
+{
+max();
+return 0;
+}
+
+Arguments, No Return Value
+#include<stdio.h>
+void max(int a,int b)
+{
+if(a>b)
+printf("%d is maximum value",a);
+else
+printf("%d is maximum value",b);
+}
+int main()
+{
+max(5,6);
+return 0;
+}
+
+No Arguments, Return Value
+#include<stdio.h>
+void max()
+{
+if(a>b)
+return a;
+else
+return b;
+}
+int main()
+{
+int result=max(30,60);
+if(result==1)
+printf("%d is maximum",a);
+else
+printf("%d is maximum",b);
+return 0;
+}
+
+Arguments + Return Value
+#include<stdio.h>
+void max()
+{
+if(a>b)
+return a;
+else
+return b;
+}
+int main()
+{
+int a,b;
+printf("enter the a and b value:");
+scanf("%d %d",&a,&b);
+int result=max(a,b);
+printf("%d is maximum");
+return 0;
+}
+
+Q4.Factorial using function
+No Arguments, No Return Value
+#include<stdio.h>
+void factorial
+{
+int n=5,fact=1;
+for(int i=0;i<=n;i++)
+{
+fact=fact*i;
+}
+printf("factorial=%d\n",factorial);
+}
+int main()
+{
+factorial();
+return 0;
+}
+
+Arguments, No Return Value
+#include<stdio.h>
+void factorial(int n)
+{
+int fact=1;
+for(int i=0;i<=n;i++)
+{
+fact=fact*i;
+}
+printf("factorial=%d\n",factorial);
+}
+int main()
+{
+factorial(6);
+return 0;
+}
+
+No Arguments, Return Value
+#include<stdio.h>
+void factorial(int n)
+{
+int fact=1;
+for(int i=0;i<=n;i++)
+{
+fact=fact*i;
+}
+return fact;
+}
+int main()
+{
+int result=factorial();
+printf("factorial=%d\n",result);
+return 0;
+}
+
+Arguments + Return Value
+#include<stdio.h>
+void factorial(int n)
+{
+int fact=1;
+for(int i=0;i<=n;i++)
+{
+fact=fact*i;
+}
+return fact;
+int main()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+printf("Factorial = %d\n", factorial(num));
+return 0;
+}
+
+Q5.Fibonacci Series using Function
+#include<stdio.h>
+void fibonacci()
+{
+int a=0,b=1,next;
+printf("fibonacci series\n");
+for(int i=0;i<n;i++)
+{
+next=a+b;
+a=b;
+b=next;
+}
+int main()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+fibonacci(num);
+return 0;
+}
+
+Q6.Reverse a Number using Function
+#include<stdio.h>
+void reverse()
+{
+int rev,s=0;
+while(num!=0)
+{
+rev=num%10;
+s=s*10+rev;
+num=num/10;
+}
+return rev;
+}
+int main()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+printf("Reverse = %d\n", reverse(num));
+return 0;
+}
+
+Q7.Palindrome Number using Function
+#include<stdio.h>
+void ispalindrome()
+{
+int rev,s=0,p;
+while(num!=0)
+{
+rev=num%10;
+s=s*10+rev;
+num=num/10;
+p=num;
+}
+return rev;
+}
+if(p==rev)
+return 1;
+else
+return 0;
+int main()
+{
+int num;
+printf("enter the number:");
+scanf("%d",&num);
+if(ispalindrome(num))
+printf("Palindrome\n");
+else
+printf("Not Palindrome\n");
+return 0;
+}
+
+Q8.Armstrong Number using Function
+Q9.Power of a Number using Function
+
+
+
+
+
+
+
+
+
+
+
+
